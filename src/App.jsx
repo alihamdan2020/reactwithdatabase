@@ -26,7 +26,17 @@ function App() {
       })
   }, [])
 
-
+// let filteredProducts;
+// if(selectedCategory==="")
+//   {
+// filteredProducts=products;
+// }
+// else{
+//   filteredProducts=products.filter((p)=>{
+//   return p.category.id == selectedCategory
+// })
+  
+}
  const filteredProducts = selectedCategory
   ? products.filter(p => p.category.id == selectedCategory)
   : products;
