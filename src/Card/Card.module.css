@@ -1,0 +1,16 @@
+.card {
+    flex-basis: 200px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card span{
+    margin-top: auto;
+}
+
+.card img{
+    width: 100%;
+}
+.card p{
+    color:red
+}

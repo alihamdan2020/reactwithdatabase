@@ -1,0 +1,33 @@
+img{
+    width:100px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-right: 10px;
+    position: relative;
+    color:var(--link-color);
+}
+a:before{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:2px;
+    top:100%;
+    transform-origin: left;
+    background-color: var(--link-color);
+    scale: 0;
+    transition: .5s;
+}
+nav a:hover:before{
+    scale: 1; 
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+    align-items: center;
+    padding-block: 10px;
+    background-color: hsl(from var(--link-color) 41 100% 80%);
+}
